@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "workspaces": [
+    "app",
+    "contracts"
+  ],
+  "name": "fhe-swap",
+  "version": "1.0.0"
+}
