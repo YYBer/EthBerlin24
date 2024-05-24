@@ -1,14 +1,1 @@
-# Ignore build artifacts
-build/
-dist/
-
-# Ignore dependencies
-node_modules/
-vendor/
-
-# Ignore IDE and editor files
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-
+node_modules
