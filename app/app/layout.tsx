@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Web3Provider } from "./components/Web3Provider";
+import { Typography } from "@mui/material";
+import styles from "../styles/Home.module.css";
+import { ConnectButton } from "./components/ConnectButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Web3Provider>
+        <body className={inter.className}>
+          <header className={styles.header}>
+            <Typography variant="h4" component="h1" className={styles.title}>
+              FHE Swap
+            </Typography>
+            <div>
+              <ConnectButton />
+            </div>
+          </header>
+          {children}
+        </body>
+      </Web3Provider>
     </html>
   );
 }

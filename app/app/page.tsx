@@ -13,7 +13,8 @@ export interface AccountType {
   balance?: string;
   chainId?: string;
   network?: string;
-}
+};
+
 
 export default function Home() {
   const [accountData, setAccountData] = useState<AccountType>({});
@@ -57,18 +58,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Container className={styles.container}>
-        {isConnected ? (
-          <Box className={styles.accountBox}>
-            <Typography variant="h6">Address: {accountData.address}</Typography>
-            <Typography variant="h6">Balance: {accountData.balance} ETH</Typography>
-            <Typography variant="h6">Network: {accountData.network}</Typography>
-          </Box>
-        ) : (
-          <Typography variant="h6">Please connect to MetaMask</Typography>
-        )}
-      </Container> */}
-
       <header className={styles.header}>
         <img src="/logo_small.png" alt="FHE Swap Logo" className={styles.logo} />
         <Typography variant="h4" component="h1" className={styles.title}>
@@ -83,7 +72,6 @@ export default function Home() {
         </Button>
       </header>
       
-
       <Container className={styles.container}>
         <Box className={styles.swapBox}>
           <Typography variant="h5" component="h2" gutterBottom>
