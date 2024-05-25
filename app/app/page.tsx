@@ -1,7 +1,14 @@
-import Head from 'next/head';
-import { Container, Box, Typography, TextField, Button, InputAdornment } from '@mui/material';
-import SwapVertIcon from '@mui/icons-material/SwapVert';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import {
+  Container,
+  Box,
+  Typography,
+  TextField,
+  Button,
+  InputAdornment,
+} from "@mui/material";
+import SwapVertIcon from "@mui/icons-material/SwapVert";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,13 +19,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
-        <img src="/logo_small.png" alt="FHE Swap Logo" className={styles.logo} />
+        <img
+          src="/logo_small.png"
+          alt="FHE Swap Logo"
+          className={styles.logo}
+        />
         <Typography variant="h4" component="h1" className={styles.title}>
           FHE Swap
         </Typography>
         <button className={styles.walletButton}>Connect with Wallet</button>
-      </header> 
-
+      </header>
 
       <Container className={styles.container}>
         <Box className={styles.swapBox}>
@@ -55,7 +65,6 @@ export default function Home() {
     </>
   );
 }
-
 
 // import Head from 'next/head';
 // import { Container, Box, Typography, TextField, Button, InputAdornment } from '@mui/material';
