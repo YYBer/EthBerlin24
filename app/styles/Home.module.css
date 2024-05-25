@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #CCCCFF;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 20px;
+    background-color: #BDB5D5;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .swapBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #BF40BF;
+    color: #fff;
+  }
+  
+  .button:hover {
+    background-color: #BF40BF;
+  }
+  
+  
