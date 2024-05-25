@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>FHE Swap</title>
-        <meta name="description" content="A Uniswap clone using Next.js" />
+        <meta name="description" content="A swap using Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
