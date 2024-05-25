@@ -18,17 +18,6 @@ export default function Home() {
         <meta name="description" content="A swap using Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
-        <img
-          src="/logo_small.png"
-          alt="FHE Swap Logo"
-          className={styles.logo}
-        />
-        <Typography variant="h4" component="h1" className={styles.title}>
-          FHE Swap
-        </Typography>
-        <button className={styles.walletButton}>Connect with Wallet</button>
-      </header>
 
       <Container className={styles.container}>
         <Box className={styles.swapBox}>

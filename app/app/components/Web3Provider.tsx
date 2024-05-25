@@ -1,10 +1,6 @@
 "use client";
 import { WagmiProvider, createConfig } from "wagmi";
-import {
-  ConnectKitButton,
-  ConnectKitProvider,
-  getDefaultConfig,
-} from "connectkit";
+import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { defineChain } from "viem";
 
@@ -44,10 +40,7 @@ export function Web3Provider({ children }: { children: React.ReactNode }) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <ConnectKitProvider theme="retro">
-          <ConnectKitButton />
-          {children}
-        </ConnectKitProvider>
+        <ConnectKitProvider theme="retro">{children}</ConnectKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
   );
