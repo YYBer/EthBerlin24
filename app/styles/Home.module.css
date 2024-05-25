@@ -6,15 +6,14 @@
     height: 100vh;
     background-color: #CCCCFF;
   }
-  
-  .header {
-    width: 100%;
-    padding: 20px;
+  /* .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
     background-color: #BDB5D5;
-    color: #fff;
-    text-align: center;
-  }
-  
+    color: white;
+  } */
   .swapBox {
     width: 100%;
     max-width: 400px;
@@ -35,5 +34,30 @@
   .button:hover {
     background-color: #BF40BF;
   }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #BDB5D5;
+    color: white;
+  }
   
+  .logo {
+    height: 60px;
+  }
   
+  .title {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .walletButton {
+    background-color: #fff;
+    color: #BF40BF;
+    border: 1px solid #3f51b5;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
